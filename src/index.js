@@ -1,12 +1,15 @@
+import "./css/styles.css";
+import "circular-std";
+
+import * as serviceWorker from "./serviceWorker";
+
+import Bio from "./components/bio";
+import { GetProjects } from "./projectDirectory.js";
+import Menu from "./components/menu";
+import Projects from "./components/projects";
 import React from "react";
 import ReactDOM from "react-dom";
-import "./css/styles.css";
 import Title from "./components/title";
-import Bio from "./components/bio";
-import Projects from "./components/projects";
-import * as serviceWorker from "./serviceWorker";
-import "circular-std";
-import { GetProjects } from "./projectDirectory.js";
 
 // ReactDOM.render(<App />, document.getElementById("root"));
 
@@ -17,10 +20,11 @@ serviceWorker.unregister();
 
 const root = document.getElementById("root");
 
-function App() {
+function Home() {
   console.log(GetProjects());
   return (
     <React.Fragment>
+      <Menu />
       <div className="title-section">
         <Title name="John Abreu" />
         <Bio />
@@ -31,4 +35,4 @@ function App() {
   );
 }
 
-ReactDOM.render(<App />, root);
+ReactDOM.render(<Home />, root);
