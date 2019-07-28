@@ -18,6 +18,13 @@ var projects = [
     "Your personal pet finding assistant. Classify dog breeds and find more like it to adopt near you",
     "/assets/barky.png",
     "https://github.com/abreuboom/barky"
+  ),
+
+  new Project(
+    "2019 Dance Concept Video",
+    "Directed & produced for UPrising Dance Crew",
+    "/assets/girlfriend.png",
+    "https://youtu.be/wd7AX1eC3-o"
   )
 ];
 
