@@ -20,7 +20,7 @@ serviceWorker.unregister();
 
 const root = document.getElementById("root");
 
-function Home() {
+function About() {
   console.log(GetProjects());
   return (
     <React.Fragment>
@@ -35,4 +35,4 @@ function Home() {
   );
 }
 
-ReactDOM.render(<Home />, root);
+ReactDOM.render(<About />, root);
