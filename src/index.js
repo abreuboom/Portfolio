@@ -9,6 +9,7 @@ import Menu from "./components/menu";
 import Projects from "./components/projects";
 import React from "react";
 import ReactDOM from "react-dom";
+import Social from "./components/social";
 import Title from "./components/title";
 
 // ReactDOM.render(<App />, document.getElementById("root"));
