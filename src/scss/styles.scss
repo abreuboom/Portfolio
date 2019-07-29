@@ -125,6 +125,7 @@ h1 {
 
 .clickable-text:hover {
   color: $highlight-color;
+  cursor: pointer;
   transition: $transition-curve;
 }
 
@@ -228,6 +229,7 @@ $border-radius: 50px;
 }
 
 .menu-title {
+  cursor: pointer;
   font-size: 20px;
   transform: translate(-20px, 20px) rotate(-90deg);
 }
@@ -238,16 +240,45 @@ $border-radius: 50px;
   line-height: 30px;
 
   li {
-    color: $secondary-color;
     cursor: pointer;
     transition: $slow-transition;
+
+    a {
+      text-decoration: none;
+    }
+
+    a:visited {
+      text-decoration: none;
+    }
   }
 
   li:hover {
-    color: $highlight-color;
-    transition: $slow-transition;
     transform: translateX(5px);
   }
 }
 
+.active {
+  color: $primary-color;
+}
+
+.inactive {
+  color: $secondary-color;
+  transition: $slow-transition;
+}
+
+.inactive:hover {
+  color: $highlight-color;
+  transition: $slow-transition;
+  transform: translateX(5px);
+}
+
 // ****** MENU SECTION END ****** \\
+
+// ****** SOCIAL SECTION BEGIN ****** \\
+.social-buttons {
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+// ****** SOCIAL SECTION END ****** \\

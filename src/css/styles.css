@@ -109,7 +109,8 @@ h1 {
 }
 
 .clickable-text:hover {
-  color: #f8bbb9;
+  color: #ffa29f;
+  cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -201,6 +202,7 @@ h1 {
 }
 
 .menu-title {
+  cursor: pointer;
   font-size: 20px;
   transform: translate(-20px, 20px) rotate(-90deg);
 }
@@ -211,14 +213,38 @@ h1 {
   line-height: 30px;
 }
 .menu-options li {
-  color: #909090;
   cursor: pointer;
   transition: all 0.75s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+.menu-options li a {
+  text-decoration: none;
+}
+.menu-options li a:visited {
+  text-decoration: none;
+}
 .menu-options li:hover {
-  color: #f8bbb9;
+  transform: translateX(5px);
+}
+
+.active {
+  color: #1f1f1f;
+}
+
+.inactive {
+  color: #909090;
+  transition: all 0.75s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.inactive:hover {
+  color: #ffa29f;
   transition: all 0.75s cubic-bezier(0.25, 0.8, 0.25, 1);
   transform: translateX(5px);
+}
+
+.social-buttons {
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=styles.css.map */

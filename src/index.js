@@ -25,8 +25,9 @@ function Home() {
   return (
     <React.Fragment>
       <Menu />
+
       <div className="title-section">
-        <Title name="John Abreu" />
+        <Title name="John Abreu." />
         <Bio />
       </div>
 
