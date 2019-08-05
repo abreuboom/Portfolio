@@ -37,7 +37,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.1.0",
+    "gh-pages": "^2.0.1",
     "git-push": "^0.1.1"
   },
   "homepage": "http://abreuboom.github.io/abbbbreu.github.io"
