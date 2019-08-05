@@ -3,13 +3,13 @@ import "circular-std";
 
 import * as serviceWorker from "./serviceWorker";
 
+import React, { Component } from "react";
+
 import Bio from "./components/bio";
 import { GetProjects } from "./projectDirectory.js";
 import Menu from "./components/menu";
 import Projects from "./components/projects";
-import React from "react";
 import ReactDOM from "react-dom";
-import Social from "./components/social";
 import Title from "./components/title";
 
 // ReactDOM.render(<App />, document.getElementById("root"));
@@ -21,20 +21,36 @@ serviceWorker.unregister();
 
 const root = document.getElementById("root");
 
-function Home() {
-  console.log(GetProjects());
-  return (
-    <React.Fragment>
-      <Menu />
+class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.select = this.select.bind(this);
+    this.state = {
+      activeMode: 0
+    };
+  }
 
-      <div className="title-section">
-        <Title name="John Abreu." />
-        <Bio />
-      </div>
+  select(mode) {
+    this.setState({ activeMode: mode });
+  }
 
-      <Projects projects={GetProjects()} />
-    </React.Fragment>
-  );
+  render() {
+    let content;
+    if (this.state.activeMode === 2) {
+      content = <Projects projects={GetProjects()} />;
+    }
+
+    return (
+      <React.Fragment>
+        <Menu setMode={this.select} />
+        <div className="title-section">
+          <Title name="John Abreu." />
+          <Bio />
+        </div>
+        {content}
+      </React.Fragment>
+    );
+  }
 }
 
 ReactDOM.render(<Home />, root);
