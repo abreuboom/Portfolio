@@ -1,12 +1,5 @@
 import React, { Component } from "react";
 
-// var NavState = {
-//   HOME: 0,
-//   ABOUT: 1,
-//   PROJECTS: 2,
-//   CONNECT: 3
-// };
-
 class Menu extends Component {
   constructor(props) {
     super(props);
@@ -21,7 +14,7 @@ class Menu extends Component {
     this.props.setMode(index);
   }
 
-  resetMenu = () => this.setState({ activeIndex: 0 });
+  resetMenu = () => this.select({ activeIndex: 0 });
 
   render() {
     return (

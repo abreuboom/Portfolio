@@ -5,6 +5,7 @@ import * as serviceWorker from "./serviceWorker";
 
 import React, { Component } from "react";
 
+import About from "./components/about";
 import Bio from "./components/bio";
 import { GetProjects } from "./projectDirectory.js";
 import Menu from "./components/menu";
@@ -35,10 +36,18 @@ class Home extends Component {
   }
 
   render() {
-    let content;
-    if (this.state.activeMode === 2) {
-      content = <Projects projects={GetProjects()} />;
-    }
+    var content = (function(mode) {
+      switch (mode) {
+        case 1:
+          content = <About />;
+          break;
+        case 2:
+          content = <Projects projects={GetProjects()} />;
+          break;
+        default:
+          break;
+      }
+    })(this.state.activeMode);
 
     return (
       <React.Fragment>
