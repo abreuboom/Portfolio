@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/abbbbreu.github.io/static/css/main.adcb2942.chunk.css",
-    "main.js": "/abbbbreu.github.io/static/js/main.d02422e8.chunk.js",
-    "main.js.map": "/abbbbreu.github.io/static/js/main.d02422e8.chunk.js.map",
-    "runtime~main.js": "/abbbbreu.github.io/static/js/runtime~main.96d9dfdd.js",
-    "runtime~main.js.map": "/abbbbreu.github.io/static/js/runtime~main.96d9dfdd.js.map",
-    "static/css/2.696fdd3b.chunk.css": "/abbbbreu.github.io/static/css/2.696fdd3b.chunk.css",
-    "static/js/2.168f51f6.chunk.js": "/abbbbreu.github.io/static/js/2.168f51f6.chunk.js",
-    "static/js/2.168f51f6.chunk.js.map": "/abbbbreu.github.io/static/js/2.168f51f6.chunk.js.map",
-    "index.html": "/abbbbreu.github.io/index.html",
-    "precache-manifest.968614f31854145186c78e45d99052fd.js": "/abbbbreu.github.io/precache-manifest.968614f31854145186c78e45d99052fd.js",
-    "service-worker.js": "/abbbbreu.github.io/service-worker.js",
-    "static/css/2.696fdd3b.chunk.css.map": "/abbbbreu.github.io/static/css/2.696fdd3b.chunk.css.map",
-    "static/css/main.adcb2942.chunk.css.map": "/abbbbreu.github.io/static/css/main.adcb2942.chunk.css.map",
-    "static/media/index.css": "/abbbbreu.github.io/static/media/CircularStd-MediumItalic.fde448ff.svg"
+    "main.css": "/Portfolio/static/css/main.6222b66a.chunk.css",
+    "main.js": "/Portfolio/static/js/main.8ba40caf.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.8ba40caf.chunk.js.map",
+    "runtime~main.js": "/Portfolio/static/js/runtime~main.132fbc8c.js",
+    "runtime~main.js.map": "/Portfolio/static/js/runtime~main.132fbc8c.js.map",
+    "static/css/2.2e559e71.chunk.css": "/Portfolio/static/css/2.2e559e71.chunk.css",
+    "static/js/2.168f51f6.chunk.js": "/Portfolio/static/js/2.168f51f6.chunk.js",
+    "static/js/2.168f51f6.chunk.js.map": "/Portfolio/static/js/2.168f51f6.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.2b4342b5b025a3f264c981de0a1f559c.js": "/Portfolio/precache-manifest.2b4342b5b025a3f264c981de0a1f559c.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/2.2e559e71.chunk.css.map": "/Portfolio/static/css/2.2e559e71.chunk.css.map",
+    "static/css/main.6222b66a.chunk.css.map": "/Portfolio/static/css/main.6222b66a.chunk.css.map",
+    "static/media/index.css": "/Portfolio/static/media/CircularStd-MediumItalic.fde448ff.svg"
   }
 }
