@@ -39,11 +39,9 @@ class Home extends Component {
     var content = (function(mode) {
       switch (mode) {
         case 1:
-          content = <About />;
-          break;
+          return <About />;
         case 2:
-          content = <Projects projects={GetProjects()} />;
-          break;
+          return <Projects projects={GetProjects()} />;
         default:
           break;
       }
