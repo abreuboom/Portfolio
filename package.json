@@ -1,5 +1,5 @@
 {
-  "name": "react-app",
+  "name": "abbbbreu",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -37,8 +37,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^2.1.0",
     "git-push": "^0.1.1"
   },
-  "homepage": "http://abreuboom.github.io/abbbbreu.github.io"
+  "homepage": "https://abreuboom.github.io/abbbbreu.github.io"
 }
