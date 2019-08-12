@@ -38,12 +38,12 @@ class Home extends Component {
   render() {
     var content = (function(mode) {
       switch (mode) {
+        case 0:
+          return <Projects projects={GetProjects()} />;
         case 1:
           return <About />;
-        case 2:
-          return <Projects projects={GetProjects()} />;
         default:
-          break;
+          return <div />;
       }
     })(this.state.activeMode);
 
