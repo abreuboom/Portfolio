@@ -3,14 +3,19 @@ import "circular-std";
 
 import * as serviceWorker from "./serviceWorker";
 
-import React, { Component } from "react";
+import React, {
+  Component
+} from "react";
 
 import About from "./components/about";
 import Bio from "./components/bio";
-import { GetProjects } from "./projectDirectory.js";
+import {
+  GetProjects
+} from "./projectDirectory.js";
 import Menu from "./components/menu";
 import Projects from "./components/projects";
 import ReactDOM from "react-dom";
+import Social from "./components/social";
 import Title from "./components/title";
 
 // ReactDOM.render(<App />, document.getElementById("root"));
@@ -32,32 +37,44 @@ class Home extends Component {
   }
 
   select(mode) {
-    this.setState({ activeMode: mode });
+    this.setState({
+      activeMode: mode
+    });
   }
 
   render() {
-    var content = (function(mode) {
-      switch (mode) {
-        case 0:
-          return <Projects projects={GetProjects()} />;
-        case 1:
-          return <About />;
-        default:
-          return <div />;
-      }
+    var content = (function (mode) {
+      // switch (mode) {
+      //   case 0:
+      //     return <Projects projects={GetProjects()} />;
+      //   case 1:
+      //     return <About />;
+      //   case 2:
+      //     return <Projects projects={GetProjects()} />;
+      //   default:
+      //     return <div />;
+      // }
     })(this.state.activeMode);
 
-    return (
-      <React.Fragment>
-        <Menu setMode={this.select} />
-        <div className="title-section">
-          <Title name="John Abreu." />
-          <Bio />
-        </div>
-        {content}
-      </React.Fragment>
+    return ( <
+      React.Fragment > {
+        /* <Menu setMode={this.select} /> */ } {
+        /* <Social /> */ } <
+      div className = "title-section" >
+      <
+      Title name = "John Abreu." / >
+      <
+      Bio / >
+      <
+      /div> {
+        /* {content} */ } <
+      Projects projects = {
+        GetProjects()
+      }
+      /> <
+      /React.Fragment>
     );
   }
 }
 
-ReactDOM.render(<Home />, root);
+ReactDOM.render( < Home / > , root);

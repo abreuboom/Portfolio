@@ -41,12 +41,6 @@ class Menu extends Component {
             isActive={false}
             onClick={"window.location.href = 'https://w3docs.com';"}
           />
-          <MenuItem
-            name="Connect"
-            index={4}
-            isActive={this.state.activeIndex === 4}
-            onClick={this.select}
-          />
         </ul>
       </div>
     );
